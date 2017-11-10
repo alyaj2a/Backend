@@ -1,0 +1,30 @@
+<?php
+/**
+* @file
+* Contains install and update functions for Forcontu Hello.
+*/
+
+use Drupal\taxonomy\Entity\Term;
+
+/**
+* Implements hook_install().
+*/
+
+function forcontu_hello_install(){
+
+  \Drupal::state()->set('forcontu_hello.test', TRUE);
+
+  $term = Term::Create(array(
+    'name' => t('Forcontu Hello'),
+    'vid' => 'tags',
+  ));
+  $term->save();
+}
+
+/**
+* Implements hook_uninstall().
+*/
+
+function forcontu_hello_uninstall(){
+  \Drupal::state()->delete('forcontu_hello.test');
+}
