@@ -19,3 +19,10 @@ forcontu_pages.user:
     _controller: '\Drupal\forcontu_pages\Controller\ForcontuPagesController::user'
   requirements:
     _permission: 'access content'
+
+forcontu_pages.links:
+  path: '/forcontu/pages/links'
+  defaults:
+    _controller: '\Drupal\forcontu_pages\Controller\ForcontuPagesController::links'
+  requirements:
+    _permission: 'access content'
