@@ -21,3 +21,9 @@ function forcontu_pages_help($route_name,
       return $output;
   }
 }
+/**
+* Implements hook_toolbar_alter().
+*/
+function forcontu_pages_toolbar_alter(&$items) {
+  $items['administration']['#attached']['library'][] = 'forcontu_pages/forcontu_pages.css';
+}

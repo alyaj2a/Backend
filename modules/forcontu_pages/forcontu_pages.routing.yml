@@ -26,3 +26,19 @@ forcontu_pages.links:
     _controller: '\Drupal\forcontu_pages\Controller\ForcontuPagesController::links'
   requirements:
     _permission: 'access content'
+
+forcontu_pages.admin_forcontu:
+  path: '/admin/forcontu'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Forcontu'
+  requirements:
+    _access: 'TRUE'
+
+forcontu_pages.admin_forcontu_pages:
+  path: '/admin/forcontu/forcontu_pages'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Forcontu Pages'
+  requirements:
+    _access: 'TRUE'
