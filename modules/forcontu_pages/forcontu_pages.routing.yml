@@ -42,3 +42,24 @@ forcontu_pages.admin_forcontu_pages:
     _title: 'Forcontu Pages'
   requirements:
     _access: 'TRUE'
+
+forcontu_pages.tab1:
+  path: '/forcontu/pages/tabs/tab1'
+  defaults:
+    _controller: '\Drupal\forcontu_pages\Controller\ForcontuPagesController::tab1'
+  requirements:
+    _permission: 'access content'
+
+forcontu_pages.tab2:
+  path: '/forcontu/pages/tabs/tab2'
+  defaults:
+    _controller: '\Drupal\forcontu_pages\Controller\ForcontuPagesController::tab2'
+  requirements:
+    _permission: 'access content'
+
+forcontu_pages.tab3:
+  path: '/forcontu/pages/tabs/tab3'
+  defaults:
+    _controller: '\Drupal\forcontu_pages\Controller\ForcontuPagesController::tab3'
+  requirements:
+    _permission: 'access content'
