@@ -137,4 +137,10 @@ class ForcontuPagesController extends ControllerBase{
   public function tab3() {
     return array('#markup' => '<p>' . $this->t('This is the content of Tab 3') . '</p>',);
   }
+  public function tab3a() {
+    return array('#markup' => '<p>' . $this->t('This is the content of Tab 3a') . '</p>',);
+  }
+  public function tab3b() {
+    return array('#markup' => '<p>' . $this->t('This is the content of Tab 3b') . '</p>',);
+  }
 }

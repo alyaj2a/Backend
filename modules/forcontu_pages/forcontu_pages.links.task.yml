@@ -15,3 +15,15 @@ forcontu_pages.tab3:
   title: Tab 3
   base_route: forcontu_pages.tab1
   weight: 30
+
+forcontu_pages.tab3a:
+  route_name: forcontu_pages.tab3a
+  title: Tab 3a
+  parent_id: forcontu_pages.tab3
+  weight: 10
+
+forcontu_pages.tab3b:
+  route_name: forcontu_pages.tab3b
+  title: Tab 3b
+  parent_id: forcontu_pages.tab3
+  weight: 20
