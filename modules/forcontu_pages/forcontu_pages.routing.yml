@@ -11,7 +11,7 @@ forcontu_pages.calculator:
   defaults:
     _controller: '\Drupal\forcontu_pages\Controller\ForcontuPagesController::calculator'
   requirements:
-    _permission: 'access content'
+    _permission: 'access calculator'
 
 forcontu_pages.user:
   path: '/forcontu/pages/user/{user}'
@@ -55,7 +55,7 @@ forcontu_pages.tab2:
   defaults:
     _controller: '\Drupal\forcontu_pages\Controller\ForcontuPagesController::tab2'
   requirements:
-    _permission: 'access content'
+    _permission: 'access tab2 page'
 
 forcontu_pages.tab3:
   path: '/forcontu/pages/tabs/tab3'

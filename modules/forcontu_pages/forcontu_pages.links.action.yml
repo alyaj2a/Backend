@@ -1,0 +1,5 @@
+forcontu_pages.link_action1:
+  route_name: forcontu_pages.action1
+  title: 'Add Something link 1'
+  appears_on:
+  - forcontu_pages.links
