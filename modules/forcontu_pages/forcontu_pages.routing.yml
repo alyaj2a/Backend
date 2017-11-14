@@ -77,3 +77,10 @@ forcontu_pages.tab3b:
     _controller: '\Drupal\forcontu_pages\Controller\ForcontuPagesController::tab3b'
   requirements:
     _permission: 'access content'
+
+forcontu_pages.action1:
+  path: '/forcontu/pages/action1'
+  defaults:
+    _controller:  '\Drupal\forcontu_pages\Controller\ForcontuPagesController::action1'
+  requirements:
+    _permission: 'access content'
